@@ -66,7 +66,7 @@ router.get("/info", (req, res) =>
                 res.send(`Car with No: ${car_no} is parked in ${slot.slot_no}`);
             }
         });
-    }/*
+    }
     else if (req.query.slot_no)
     {
         const slot_no = req.query.slot_no;
@@ -82,5 +82,5 @@ router.get("/info", (req, res) =>
         });
     }
 });
-*/
+
 module.exports = router;
