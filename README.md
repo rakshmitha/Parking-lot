@@ -22,7 +22,15 @@ To get the Node server running locally:
 
 - Clone this repo
 - `npm i` to install all required dependencies
-- Create a .env file
+- Create a .env file with the following:
+    ```sh
+    SLOTS = 
+    PORT = 
+    DBURI =
+    ```
+    where SLOTS = no. of slots 
+          PORT = server port number
+          DBURI = your mongodb uri describing the db connenction and location
 - Install MongoDB Community Edition ([instructions](https://docs.mongodb.com/manual/installation/#tutorials)) and run it by executing `mongod`
 - `node index` to start the local server
 - Click on the IP addresss shown in your terminal and after the end of the url do the following:
@@ -68,13 +76,7 @@ To get the Node server running locally:
 - `routes/` - This folder contains the route definitions for our API.
 - `models/` - This folder contains the schema definitions for our Mongoose models.
 
-## Error Handling
 
-In `routes/api/index.js`, we define a error-handling middleware for handling Mongoose's `ValidationError`. This middleware will respond with a 422 status code and format the response to have
-
-## limitation
-
-Requests are limited using the `limit` header. We define express middlewares in `routes/index.js` that can be used to authenticate and limit requests. The `required` middleware configures using our application's secret and will return a 400 status code if the request limit exceeds. 
 
 
 
