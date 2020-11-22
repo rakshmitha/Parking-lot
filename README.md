@@ -7,7 +7,8 @@
 
 This repo is functionality complete — PRs and issues welcome!
 
-#Objectives
+# Objectives
+
 1. Park a car : The Endpoint is given as the car number as input and outputs the slot where it is parked. If the parking lot is full, the appropriate error message is returned
 
 2. Unpark a car : This endpoint takes the slot number fro, which the car is to be removed from and frees that slot up to be used by other cars
@@ -28,9 +29,9 @@ To get the Node server running locally:
     PORT = 
     DBURI =
     ```
-    where SLOTS = no. of slots 
-          PORT = server port number
-          DBURI = your mongodb uri describing the db connenction and location
+    where 
+        SLOTS = no. of slots , PORT = server port number , DBURI = your mongodb uri describing the db connenction and location
+          
 - Install MongoDB Community Edition ([instructions](https://docs.mongodb.com/manual/installation/#tutorials)) and run it by executing `mongod`
 - `node index` to start the local server
 - Click on the IP addresss shown in your terminal and after the end of the url do the following:
