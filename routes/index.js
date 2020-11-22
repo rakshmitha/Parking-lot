@@ -5,7 +5,7 @@ const Slot = require("../models");
 router.get('/',(req,res) => {
     res.send('api');
 });
-/*
+
 //To park a car
 router.get("/park", (req, res) => 
 {
@@ -19,7 +19,7 @@ router.get("/park", (req, res) =>
             res.send("All slots are parked. Sorry")
     })
 });
-
+/*
 //To unpark a car
 router.get("/unpark", (req, res) => 
 {
