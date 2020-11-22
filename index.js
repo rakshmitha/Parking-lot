@@ -20,6 +20,6 @@ mongoose.connect(DBURI,
 { useUnifiedTopology: true, useNewUrlParser: true},
 () => console.log("MongoDB connected"));
 
-//app.use("/api", require("./routes"));
+app.use("/api", require("./routes"));
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+//app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
