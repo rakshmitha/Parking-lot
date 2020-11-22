@@ -19,7 +19,7 @@ router.get("/park", (req, res) =>
             res.send("All slots are parked. Sorry")
     })
 });
-/*
+
 //To unpark a car
 router.get("/unpark", (req, res) => 
 {
@@ -45,7 +45,7 @@ router.get("/unpark", (req, res) =>
             res.send("Sorry slot is not found.");
     });
 });
-
+/*
 //To know in which slot the car is parked or vice versa
 router.get("/info", (req, res) => 
 {
