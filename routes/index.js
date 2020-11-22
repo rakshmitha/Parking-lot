@@ -45,7 +45,7 @@ router.get("/unpark", (req, res) =>
             res.send("Sorry slot is not found.");
     });
 });
-/*
+
 //To know in which slot the car is parked or vice versa
 router.get("/info", (req, res) => 
 {
@@ -66,7 +66,7 @@ router.get("/info", (req, res) =>
                 res.send(`Car with No: ${car_no} is parked in ${slot.slot_no}`);
             }
         });
-    }
+    }/*
     else if (req.query.slot_no)
     {
         const slot_no = req.query.slot_no;
